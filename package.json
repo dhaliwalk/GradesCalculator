@@ -1,0 +1,19 @@
+{
+  "name": "gradescalculator",
+  "version": "1.0.0",
+  "description": "\"grades calculator app\"",
+  "main": "calculator.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dhaliwalk/GradesCalculator.git"
+  },
+  "author": "\"dhaliwalk\"",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dhaliwalk/GradesCalculator/issues"
+  },
+  "homepage": "https://github.com/dhaliwalk/GradesCalculator#readme"
+}
