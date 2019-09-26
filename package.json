@@ -1,4 +1,7 @@
 {
+  "scripts": {
+    "start": "node your-script.js"
+}
   "name": "gradescalculator",
   "version": "1.0.0",
   "description": "\"grades calculator app\"",
