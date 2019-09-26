@@ -36,6 +36,9 @@ thead tr {
   padding-top: 10pt;
   color: #A6192E;
 }
+button {
+  float: right;
+}
 body {
   padding-bottom: 25pt;
   padding top: 25pt;

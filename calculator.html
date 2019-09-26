@@ -22,49 +22,52 @@
             <tbody>
               <td>Activity 1</td>
               <td>A1</td>
-              <td><input type="text" name="A1Weight"/></td>
+              <td><input type="text" id="A1Weight" placeholder="A1 Weight"/></td>
               <td>
-                <input type="text" name="A1Grade1"/>
+                <input type="text" id="A1Grade1" placeholder="A1 Grade"/>
               <p>/</p>
-                <input type="text" name="A1Grade2"/>
+                <input type="text" id="A1Grade2" placeholder="A1 Total"/>
               </td>
-              <td></td>
+              <td><p id="A1 Percent"></p></td>
             </tbody>
               <tbody>
                 <td>Activity 2</td>
                 <td>A2</td>
-                <td><input type="text" name="A2Weight"/></td>
+                <td><input type="text" id="A2Weight" placeholder="A2 Weight"/></td>
                 <td>
-                  <input type="text" name="A2Grade1"/>
+                  <input type="text" id="A2Grade1" placeholder="A2 Grade"/>
                   <p>/</p>
-                  <input type="text" name="A2Grade2"/>
+                  <input type="text" id="A2Grade2" placeholder="A2 Total"/>
                 </td>
                 <td></td>
               </tbody>
                 <tbody>
                   <td>Activity 3</td>
                   <td>A3</td>
-                  <td><input type="text" name="A3Weight"/></td>
+                  <td><input type="text" id="A3Weight" placeholder="A3 Weight"/></td>
                   <td>
-                    <input type="text" name="A3Grade1"/>
+                    <input type="text" id="A3Grade1" placeholder="A3 Grade"/>
                     <p>/</p>
-                    <input type="text" name="A3Grade2"/>
+                    <input type="text" id="A3Grade2" placeholder="A3 Total"/>
                   </td>
                   <td> </td>
                 </tbody>
                   <tbody>
                     <td>Activity 4</td>
                     <td>A4</td>
-                    <td><input type="text" name="A4Weight"/></td>
+                    <td><input type="text" id="A4Weight" placeholder="A4 Weight"/></td>
                     <td>
-                      <input type="text" name="A4Grade1"/>
+                      <input type="text" id="A4Grade1" placeholder="A4 Grade"/>
                       <p>/</p>
-                      <input type="text" name="A4Grade2"/>
+                      <input type="text" id="A4Grade2" placeholder="A4 Total"/>
                     </td>
                     <td></td>
                   </tbody>
           </table>
           <h4 id="result">Result</h4>
+          <p id="res"></p>
+          <button onclick="weightedFunction()">Weighted</button>
+          <button onclick="meanFunction()">Mean</button>
         </article>
       </article>
     </body>
