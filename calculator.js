@@ -24,5 +24,67 @@ function meanFunction() {
   var a32 = document.getElementById("A3Grade2").value;
   var a41 = document.getElementById("A4Grade1").value;
   var a42 = document.getElementById("A4Grade2").value;
-  document.getElementById("res").innerHTML = ((a11/a12)+(a21/a22)+(a31/a32)+(a41/a42))/4;
+  var total = ((a11/a12)+(a21/a22)+(a31/a32)+(a41/a42))/4;
+  document.getElementById("res").innerHTML = total*100+"/100";
+}
+function weightedFunction() {
+  var a11 = document.getElementById("A1Grade1").value;
+  var a12 = document.getElementById("A1Grade2").value;
+  var a1w = document.getElementById("A1Weight").value;
+
+  var a21 = document.getElementById("A2Grade1").value;
+  var a22 = document.getElementById("A2Grade2").value;
+  var a2w = document.getElementById("A2Weight").value;
+
+  var a31 = document.getElementById("A3Grade1").value;
+  var a32 = document.getElementById("A3Grade2").value;
+  var a3w = document.getElementById("A3Weight").value;
+
+  var a41 = document.getElementById("A4Grade1").value;
+  var a42 = document.getElementById("A4Grade2").value;
+  var a4w = document.getElementById("A4Weight").value;
+  var divider  = a1w*1+a2w*1+a3w*1+a4w*1;
+  var total = (((a11/a12)*a1w)+((a21/a22)*a2w)+((a31/a32)*a3w)+((a41/a42)*a4w));
+  document.getElementById("res").innerHTML = (total/divider)*100+"/100";
+}
+
+function A1per() {
+  var a = document.getElementById("A1Grade1").value;
+  var b = document.getElementById("A1Grade2").value;
+  var total = (a/b)*100;
+  if (total < 101) {
+    document.getElementById("A1Percent").innerHTML = total+"%";
+  } else {
+    document.getElementById("A1Percent").innerHTML = "Percentage Too High!";
+  }
+}
+function A2per() {
+  var a = document.getElementById("A2Grade1").value;
+  var b = document.getElementById("A2Grade2").value;
+  var total = (a/b)*100;
+  if (total < 101) {
+    document.getElementById("A2Percent").innerHTML = total+"%";
+  } else {
+    document.getElementById("A2Percent").innerHTML = "Percentage Too High!";
+  }
+}
+function A3per() {
+  var a = document.getElementById("A3Grade1").value;
+  var b = document.getElementById("A3Grade2").value;
+  var total = (a/b)*100;
+  if (total < 101) {
+    document.getElementById("A3Percent").innerHTML = total+"%";
+  } else {
+    document.getElementById("A3Percent").innerHTML = "Percentage Too High!";
+  }
+}
+function A4per() {
+  var a = document.getElementById("A4Grade1").value;
+  var b = document.getElementById("A4Grade2").value;
+  var total = (a/b)*100;
+  if (total < 101) {
+    document.getElementById("A4Percent").innerHTML = total+"%";
+  } else {
+    document.getElementById("A4Percent").innerHTML = "Percentage Too High!";
+  }
 }

@@ -26,9 +26,9 @@
               <td>
                 <input type="text" id="A1Grade1" placeholder="A1 Grade"/>
               <p>/</p>
-                <input type="text" id="A1Grade2" placeholder="A1 Total"/>
+                <input type="text" id="A1Grade2" oninput="A1per()" placeholder="A1 Total"/>
               </td>
-              <td><p id="A1 Percent"></p></td>
+              <td><p id="A1Percent"></p></td>
             </tbody>
               <tbody>
                 <td>Activity 2</td>
@@ -37,9 +37,9 @@
                 <td>
                   <input type="text" id="A2Grade1" placeholder="A2 Grade"/>
                   <p>/</p>
-                  <input type="text" id="A2Grade2" placeholder="A2 Total"/>
+                  <input type="text" id="A2Grade2" oninput="A2per()" placeholder="A2 Total"/>
                 </td>
-                <td></td>
+                <td><p id="A2Percent"></p></td>
               </tbody>
                 <tbody>
                   <td>Activity 3</td>
@@ -48,9 +48,9 @@
                   <td>
                     <input type="text" id="A3Grade1" placeholder="A3 Grade"/>
                     <p>/</p>
-                    <input type="text" id="A3Grade2" placeholder="A3 Total"/>
+                    <input type="text" id="A3Grade2" oninput="A3per()" placeholder="A3 Total"/>
                   </td>
-                  <td> </td>
+                  <td><p id="A3Percent"></p></td>
                 </tbody>
                   <tbody>
                     <td>Activity 4</td>
@@ -59,9 +59,9 @@
                     <td>
                       <input type="text" id="A4Grade1" placeholder="A4 Grade"/>
                       <p>/</p>
-                      <input type="text" id="A4Grade2" placeholder="A4 Total"/>
+                      <input type="text" id="A4Grade2" oninput="A4per()" placeholder="A4 Total"/>
                     </td>
-                    <td></td>
+                    <td><p id="A4Percent"></p></td>
                   </tbody>
           </table>
           <h4 id="result">Result</h4>
