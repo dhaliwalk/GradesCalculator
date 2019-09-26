@@ -38,6 +38,9 @@ thead tr {
 }
 button {
   float: right;
+  color: white;
+  background-color: #A6192E;
+  font-size: 20px;
 }
 body {
   padding-bottom: 25pt;
