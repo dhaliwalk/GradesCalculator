@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+  <html>
+      <head>
+        <% include ../partials/header.ejs %>
+      </head>
+      <body>
+        <article id="main">
+        <h1>Grade Calculator</h1>
+        <article id="table">
+          <h3 id="activities">Activities</h3>
+          <h4>Give grades to the numeric activities:</h4>
+            <table>
+              <thead>
+                <th>Name</th>
+                <th>Short Name</th>
+                <th>Weight</th>
+                <th>Grade</th>
+                <th>Percent</th>
+              </thead>
+              <tbody>
+                <td>Activity 1</td>
+                <td>A1</td>
+                <td><input type="text" id="A1Weight" placeholder="A1 Weight"/></td>
+                <td>
+                  <input type="text" id="A1Grade1" placeholder="A1 Grade"/>
+                <p>/</p>
+                  <input type="text" id="A1Grade2" oninput="A1per()" placeholder="A1 Total"/>
+                </td>
+                <td><p id="A1Percent"></p></td>
+              </tbody>
+                <tbody>
+                  <td>Activity 2</td>
+                  <td>A2</td>
+                  <td><input type="text" id="A2Weight" placeholder="A2 Weight"/></td>
+                  <td>
+                    <input type="text" id="A2Grade1" placeholder="A2 Grade"/>
+                    <p>/</p>
+                    <input type="text" id="A2Grade2" oninput="A2per()" placeholder="A2 Total"/>
+                  </td>
+                  <td><p id="A2Percent"></p></td>
+                </tbody>
+                  <tbody>
+                    <td>Activity 3</td>
+                    <td>A3</td>
+                    <td><input type="text" id="A3Weight" placeholder="A3 Weight"/></td>
+                    <td>
+                      <input type="text" id="A3Grade1" placeholder="A3 Grade"/>
+                      <p>/</p>
+                      <input type="text" id="A3Grade2" oninput="A3per()" placeholder="A3 Total"/>
+                    </td>
+                    <td><p id="A3Percent"></p></td>
+                  </tbody>
+                    <tbody>
+                      <td>Activity 4</td>
+                      <td>A4</td>
+                      <td><input type="text" id="A4Weight" placeholder="A4 Weight"/></td>
+                      <td>
+                        <input type="text" id="A4Grade1" placeholder="A4 Grade"/>
+                        <p>/</p>
+                        <input type="text" id="A4Grade2" oninput="A4per()" placeholder="A4 Total"/>
+                      </td>
+                      <td><p id="A4Percent"></p></td>
+                    </tbody>
+            </table>
+            <h4 id="result">Result</h4>
+            <p id="res"></p>
+            <button onclick="meanFunction()">Mean</button>
+            <button onclick="weightedFunction()">Weighted</button>
+          </article>
+        </article>
+      </body>
+  </html>
