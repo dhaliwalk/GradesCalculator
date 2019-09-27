@@ -155,7 +155,7 @@ function weightedFunction() {
   }
   var count = a1w*1+a2w*1+a3w*1+a4w*1;
   if (count == 0) {
-    document.getElementById("res").innerHTML = "Invaild Inputs";
+    document.getElementById("res").innerHTML = "Invalid Inputs";
   }
   else {
     var total = ((a1perc*a1w)+(a2perc*a2w)+(a3perc*a3w)+(a4perc*a4w));
