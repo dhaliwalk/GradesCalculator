@@ -8,9 +8,9 @@ th {
 }
 td {
   border: solid 1pt #A9A9A9;
-  padding-right: 45pt;
-  padding-top: 25pt;
-  padding-bottom: 25pt;
+  padding-right: 35pt;
+  padding-top: 5pt;
+  padding-bottom: 5pt;
   padding-left: 5pt;
 }
 thead tr {
@@ -20,11 +20,13 @@ thead tr {
   background-color: #F0F8FF;
   padding-left: 10pt;
   padding-bottom: 10pt;
+  padding-right: 15pt;
 }
 #main {
   background-color: #FFFFFF;
   padding-top: 25pt;
   padding-left: 15pt;
+  padding-right: 70pt;
   padding-bottom: 20pt;
   border-top: solid 20pt #000000;
   border-bottom: solid 30pt #000000;
@@ -48,4 +50,8 @@ body {
   padding-left: 25pt;
   padding-right: 25pt;
   background-color: #A6192E;
+}
+
+input {
+  height: 25px;
 }
