@@ -55,3 +55,6 @@ body {
 input {
   height: 25px;
 }
+h1 {
+  font-family: Times;
+}
